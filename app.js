@@ -22,7 +22,11 @@ function generatePassword() {
         password += allCharacters[randomIndex];
     }
 
+    // Set the generated password to the textarea
     document.getElementById('password').value = password;
+
+    // Force the label to move up
+    M.updateTextFields();
 }
 
 function copyToClipboard() {
